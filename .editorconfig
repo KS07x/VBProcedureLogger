@@ -1,0 +1,81 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = crlf
+indent_style = space
+indent_size = 4
+tab_width = 4
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.{sln,csproj,vbproj,props,targets,xml,resx,config}]
+indent_style = space
+indent_size = 2
+tab_width = 2
+
+[*.vb]
+
+# .NET formatting and code-style conventions
+dotnet_sort_system_directives_first = true
+dotnet_separate_import_directive_groups = true
+dotnet_style_require_accessibility_modifiers = for_non_interface_members:warning
+dotnet_style_predefined_type_for_locals_parameters_members = true:suggestion
+dotnet_style_predefined_type_for_member_access = true:suggestion
+dotnet_style_qualification_for_field = false:suggestion
+dotnet_style_qualification_for_property = false:suggestion
+dotnet_style_qualification_for_method = false:suggestion
+dotnet_style_qualification_for_event = false:suggestion
+dotnet_style_object_initializer = true:suggestion
+dotnet_style_collection_initializer = true:suggestion
+dotnet_style_coalesce_expression = true:suggestion
+dotnet_style_null_propagation = true:suggestion
+dotnet_style_prefer_compound_assignment = true:suggestion
+dotnet_style_prefer_simplified_boolean_expressions = true:suggestion
+dotnet_style_prefer_simplified_interpolation = true:suggestion
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true:suggestion
+dotnet_style_readonly_field = true:suggestion
+
+# Visual Basic conventions
+visual_basic_style_prefer_isnot_expression = true:suggestion
+visual_basic_style_prefer_simplified_object_creation = true:suggestion
+
+# Procedure calls must use explicitly named arguments for readability.
+# Example: ProcedureLogger.Configure(customLogFilePath:="logs\application.log")
+
+# Naming conventions
+dotnet_naming_rule.types_and_members_should_be_pascal_case.symbols = types_and_members
+dotnet_naming_rule.types_and_members_should_be_pascal_case.style = pascal_case
+dotnet_naming_rule.types_and_members_should_be_pascal_case.severity = warning
+
+dotnet_naming_symbols.types_and_members.applicable_kinds = class, struct, interface, enum, delegate, property, method, event, field
+dotnet_naming_symbols.types_and_members.applicable_accessibilities = public, protected, protected_internal, private_protected
+
+dotnet_naming_rule.parameters_and_locals_should_be_camel_case.symbols = parameters_and_locals
+dotnet_naming_rule.parameters_and_locals_should_be_camel_case.style = camel_case
+dotnet_naming_rule.parameters_and_locals_should_be_camel_case.severity = suggestion
+
+dotnet_naming_symbols.parameters_and_locals.applicable_kinds = parameter, local
+
+dotnet_naming_rule.private_fields_should_use_underscore_camel_case.symbols = private_fields
+dotnet_naming_rule.private_fields_should_use_underscore_camel_case.style = underscore_camel_case
+dotnet_naming_rule.private_fields_should_use_underscore_camel_case.severity = suggestion
+
+dotnet_naming_symbols.private_fields.applicable_kinds = field
+dotnet_naming_symbols.private_fields.applicable_accessibilities = private, protected
+dotnet_naming_symbols.private_fields.required_modifiers = readonly
+
+dotnet_naming_rule.private_constants_should_be_pascal_case.symbols = private_constants
+dotnet_naming_rule.private_constants_should_be_pascal_case.style = pascal_case
+dotnet_naming_rule.private_constants_should_be_pascal_case.severity = suggestion
+
+dotnet_naming_symbols.private_constants.applicable_kinds = field
+dotnet_naming_symbols.private_constants.applicable_accessibilities = private, protected
+dotnet_naming_symbols.private_constants.required_modifiers = const
+
+dotnet_naming_style.pascal_case.capitalization = pascal_case
+
+dotnet_naming_style.camel_case.capitalization = camel_case
+
+dotnet_naming_style.underscore_camel_case.required_prefix = _
+dotnet_naming_style.underscore_camel_case.capitalization = camel_case

@@ -1,0 +1,89 @@
+# Visual Studio / .NET build artifacts
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.ilk
+*.log
+*.aps
+*.pch
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.swp
+*.bak
+*.orig
+
+# Visual Studio user-specific files
+.vs/
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+*.vbproj.user
+*.vcxproj.user
+*.dbmdl
+*.opendb
+*.pdb
+*.pidb
+*.svclog
+*.vsp
+*.vspx
+*.sap
+
+# NuGet / Paket
+packages/
+*.nupkg
+*.snupkg
+.nuget/
+project.lock.json
+packages.config
+
+# Test / coverage outputs
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+# ReSharper / Rider / IntelliJ
+_ReSharper*/
+*.DotSettings.user
+.idea/
+*.iml
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Misc build tooling
+*.Publish.xml
+*.publish.xml
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# Local environment / secrets
+.env
+.env.*
+secrets.json
+local.settings.json
+
+# Archive / backup files
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+*.bak
+
+# NuGet Package
+Nuget
